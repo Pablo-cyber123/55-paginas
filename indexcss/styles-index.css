@@ -1,115 +1,105 @@
-body {
-  margin: 0;
-  font-family: 'Playfair Display', serif;
-  background-color: #000;
+/* styles-index.css */
+:root{
+  --bg: #000;
+  --card: #0b0b0b;
+  --muted: #ddd;
+  --accent: #ffd166;
+}
+
+*{box-sizing: border-box}
+body{
+  margin:0;
+  font-family:'Playfair Display', serif;
+  background:var(--bg);
   color: #fff;
 }
 
-header {
-  text-align: center;
-  padding: 1rem;
-  border-bottom: 2px solid #333;
+header{
+  text-align:center;
+  padding:1rem;
+  border-bottom: 1px solid #1a1a1a;
 }
+header h1{ margin:0; font-weight:700; letter-spacing:1px; color:#fff; }
 
-header h1 {
-  margin: 0;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
+/* contenedor de menu */
+.menu{ padding:2rem; display:flex; justify-content:center; }
 
-.menu {
-  display: flex;
-  justify-content: center;
-  padding: 2rem;
-}
-
-.menu ul {
+/* grid adaptativo */
+.menu ul{
+  width: min(1200px, 95%);
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-  gap: 1.5rem;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  list-style:none;
+  padding:0;
+  margin:0;
 }
 
-.menu li {
-  position: relative;
+/* cada celda */
+.menu li{
+  background: var(--card);
+  border-radius:12px;
+  overflow:hidden;
+  transition: transform .25s ease, box-shadow .25s ease;
+  display: block; /* importante */
 }
 
-.menu a {
-  display: block;
-  border-radius: 10px;
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+/* link con miniatura y texto */
+.menu a{
+  display:flex;
+  gap: 0.8rem;
+  align-items:center;
+  padding: 0.6rem;
+  color: var(--muted);
+  text-decoration:none;
 }
 
-.menu a img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
+.menu a img{
+  width:56px;
+  height:56px;
+  object-fit:cover;
+  border-radius:8px;
+  flex-shrink:0;
+  display:block;
 }
 
-.menu a:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+/* titulo dentro del link */
+.titulo{
+  font-size:0.95rem;
+  line-height:1.1;
+  color:#fff;
 }
 
+/* hover en la tarjeta (efecto elegnte) */
+.menu li:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 14px 36px rgba(0,0,0,0.6);
+}
 
-.menu .preview {
-  position: absolute;
-  left: 110%;
-  top: 50%;
-  transform: translateY(-50%) scale(0.9);
-  width: 200px;
+/* PREVIEW -> dentro del flujo: oculto por defecto con max-height para animar */
+.menu .preview{
+  display:block;               /* es un elemento en flujo */
+  width:100%;
+  object-fit:cover;
+  border-radius: 0 0 12px 12px;
+  max-height: 0;               /* cerrado */
   opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.4s ease, transform 0.4s ease;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(255,255,255,0.3);
-  background-color: transparent;
-  display: none; /* oculto por defecto */
-  width: 100%;
-  border-radius: 0 0 10px 10px;
+  overflow:hidden;
+  transition: max-height 0.4s ease, opacity 0.35s ease, transform 0.35s ease;
+  transform: translateY(-6px);
 }
 
-.menu li:hover .preview {
+/* al hacer hover, la preview se expande y empuja el grid (porque no es absolute) */
+.menu li:hover .preview{
+  max-height: 420px; /* suficiente para la mayoría de imágenes; ajústalo si tu imagen es más alta */
   opacity: 1;
-  transform: translateY(-50%) scale(1);
+  transform: translateY(0);
+  padding: 0; /* si deseas espacio interior puedes agregar */
 }
 
-.menu ul {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-  gap: 1.5rem;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.menu li {
-  background-color: #111;
-  border-radius: 10px;
-  overflow: hidden;
-  transition: background-color 0.3s ease;
-}
-
-.menu a {
-  display: block;
-  text-align: center;
-}
-
-.menu a img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px 10px 0 0;
-}
-
-.menu a:hover {
-  background-color: #222;
-}
-
-
-.menu li:hover .preview {
-  display: block;
+/* responsive: en pantallas pequeñas espaciado y tamaño de miniaturas */
+@media (max-width:600px){
+  .menu ul{ grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap:0.7rem; }
+  .menu a img{ width:48px; height:48px; }
+  .titulo{ font-size:0.85rem; }
 }
