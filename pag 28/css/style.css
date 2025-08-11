@@ -1,0 +1,152 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Sección principal */
+  .main-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  
+  .text-container {
+    width: 50%;
+  }
+  
+  .text-container h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+  
+  .text-container p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .find-btn {
+    background-color: #2e7d32;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .find-btn:hover {
+    background-color: #1b5e20;
+  }
+  
+  .image-container {
+    width: 45%;
+    position: relative;
+  }
+  
+  .plants-image {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .logo-container {
+    position: absolute;
+    top: -10px;
+    right: -100px;
+    transform: rotate(45deg);
+    padding: 10px;
+  }
+  
+  .logo {
+    width: 70%;
+    height: auto;
+  }
+  
+  /* Sección de tarjetas */
+  .cards-section {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  
+  .card {
+    background-color: #fff;
+    padding: 50px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    text-align: left;
+  }
+  
+  .card-icon {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .main-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .text-container,
+    .image-container {
+      width: 100%;
+    }
+  
+    .plants-image {
+      margin-top: 20px;
+    }
+  
+    .logo-container {
+      position: static;
+      margin-top: 20px;
+    }
+  
+    .cards-section {
+      flex-direction: column;
+    }
+  
+    .card {
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .text-container h1 {
+      font-size: 2rem;
+    }
+  
+    .card-icon {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .card p {
+      font-size: 0.9rem;
+    }
+  }
