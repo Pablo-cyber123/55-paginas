@@ -1,0 +1,80 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background: url('/img/unsplash_cm0eSVxdLDg.png') no-repeat center center/cover;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .social {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .social a {
+
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  .content {
+    text-align: right;
+    padding: 80px;
+    max-width: 700px;
+    margin-left: auto;
+  }
+
+  .content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+
+  .content p {
+    margin: 20px 0;
+    line-height: 1.5;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: white;
+    color: black;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .card {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    max-width: 300px;
+    border-left: 4px solid white;
+    font-size: 14px;
+  }

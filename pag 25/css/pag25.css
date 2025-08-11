@@ -1,0 +1,65 @@
+*{
+    font-family: "Lato", sans-serif;
+}
+section{
+    background-image: url(/img/pag/pag25/Hero\ section.png);
+    background-size: cover;
+    width: 55vw;
+    height: 34vw;
+    color: white;
+}
+
+section div{
+    padding: 3vw;
+    padding-top: 6vw;
+    width: 25vw;
+}
+section h1{
+    font-size: 3vw;
+    font-weight: 800;
+}
+.div-grid{
+    position: absolute;
+    left: 5vw;
+    top: 32vw;
+    height: 6vw;
+    display: grid;
+    grid-template-columns: 15vw 15vw 15vw;
+    background-color: #efeeee;
+    border-radius: 0.7vw;
+    width: 44vw;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 3vw 9vw;
+}
+.div-grid img{
+    width: 3vw;
+}
+.div-grid p{
+    margin-top: -1.5vw;
+    font-size: 0.6vw;
+}
+.div-grid h3{
+    margin-top: -0.7vw;
+}
+.div-grid div{
+    margin-top: 1vw;
+    margin-left: 1vw;
+}
+.mi-boton {
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    border-radius: 2vw;
+    margin-top: 2vw;
+    font-size: 0.9vw;
+    width: 11vw;
+    height: 3vw;
+    background-color: #7eb5e1;
+    color: white;
+    border: 1px solid #7eb5e1;
+    border-radius: 2vw;
+    margin-top: 2vw;
+}

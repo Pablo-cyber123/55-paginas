@@ -1,0 +1,56 @@
+*{
+    font-family: "Nunito Sans";
+}
+.contenedor{
+    display: grid;
+    grid-template-columns:  33vw 20vw ;
+}
+.div-img img{
+    width: 29vw;
+    padding-top: 1vw;
+}
+.div-img{
+    grid-column: 1;
+    grid-row: 1;
+}
+.div-texto{
+    grid-column: 2;
+    grid-row: 1;
+}
+.div-texto p{
+    color: rgb(82, 76, 76);
+}
+.div-texto button{
+    font-size: 0.75vw;
+    width: 8vw;
+    height: 3vw;
+    background-color: #252525;
+    color: white;
+    border: 1px solid #252525;
+    border-radius: 1vw;
+}
+.div-texto h1:nth-child(4){
+    padding-top: 3.5vw;
+    color: #7e7575;
+    font-size: 1.2em;
+    margin-bottom: -0.8em;
+}
+.div-texto p:nth-child(5){
+    font-size: 0.85em;
+    font-style:italic;
+    color: #d1cccc;
+    margin-bottom: 2em;
+}
+.div-texto h1:nth-child(6){
+    font-size: 1.2vw;
+    color: #7e7575;
+    margin-bottom: -0.8em;
+}
+.div-texto p:nth-child(7){
+    font-size: 0.95em;
+}
+.contenedor{
+    display: block
+    align-items: center;
+    
+}

@@ -1,0 +1,49 @@
+html{
+    background-image: url(/img/pag/pag35/Image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+button{
+    padding: 0.3rem;
+    font-size: 1rem;
+    width: 8rem;
+    height: 3rem;
+    background-color: #252525;
+    color: white;
+    border: 1px solid #252525;
+    border-radius: 1rem;
+}
+section{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    .div-izquierdo{
+        font-size: 1.5rem;
+        text-align: center;
+        margin-top: 10rem;
+        margin-left: 9rem;
+        width: 23rem;
+        border: 1px solid black;
+        border-radius: 2rem;
+        .div-inferior-izquierdo{
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+    }
+    .div-derecho{
+        margin-top: 3rem;
+        margin-left: -4rem;
+    }
+}
+.div-superior-izquierdo img{
+    margin-top: -4.2rem;
+}
+.div-izquierdo p{
+    font-weight: 300;
+}
+.div-derecho p{
+    font-size: 1.7rem;
+    margin-right: 25rem;
+}
+.div-derecho h1{
+    font-size: 3.6rem;
+}

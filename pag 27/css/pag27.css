@@ -1,0 +1,64 @@
+*{
+    font-family: "Lato", sans-serif;
+}
+body{
+    background-color: #fbf4df;
+}
+.grid-superior{
+    display: grid;
+    grid-template-columns: 30vw 25vw;
+}
+.grid-superior img{
+    width: 25vw;
+}
+.grid-superior div:nth-child(1){
+    padding: 4vw;
+}
+.grid-superior h1{
+    font-size: 2.5vw;
+}
+button{
+    
+}
+.grid-inferior{
+    width: 56vw;
+    margin-top: 2vw;
+    display: grid;
+    grid-template-columns: repeat(4,14vw);
+    background-color: #f8d046;
+    border: 1px solid black;
+    box-shadow: 0.5vw 1.2vw #c0a234;
+    border-radius: 2vw;
+}
+.grid-inferior div{
+    margin: auto;
+}
+.img-a{
+    position: absolute;
+    top: 0%;
+}
+.img-b{
+    position: absolute;
+    top: 26vw;
+    left: 52vw;
+}
+.img-a img{
+    margin: 1vw ;
+    height: 5vw;
+}
+.mi-boton {
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    border-radius: 2vw;
+    margin-top: 2vw;
+    font-size: 0.9vw;
+    width: 11vw;
+    height: 3vw;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    border-radius: 2vw;
+    margin-top: 0vw;
+}

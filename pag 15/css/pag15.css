@@ -1,0 +1,53 @@
+*{
+    font-family: "Lato", sans-serif;
+}
+section{
+    background-image: url(/img/pag/pag15/unsplash_jSAb1ifwf8Y.png);
+    background-size: cover;
+    width: 60vw;
+    height: 45vw;
+}
+.div-superior{
+    width: 23vw;
+    padding: 5vw;
+}
+.div-superior p{
+    margin-top: -1.5vw;
+    color: #ffffff;
+}
+.div-superior h1{
+    font-size: 3vw;
+    color: #ffffff;
+}
+button{
+    font-size: 0.85vw;
+    width: 9vw;
+    height: 3vw;
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 1vw;
+}
+.div-inferior{
+    margin-top: 5vw;
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw;
+}
+.div-inferior div{
+    border-radius: 1.3vw;
+    margin: auto;
+    width: 17vw;
+    background-color: rgb(255,255,255,0.25);
+}
+.div-inferior div h3{
+    margin-top: 1vw;
+    margin-left: 1.5vw;
+    color: #ffffff;
+}
+.div-inferior div p{
+    color:#ffffff;
+    font-weight: 300;
+    margin-top: -0.8vw;
+    margin-left: 1.7vw;
+    margin-right: 1vw;
+}

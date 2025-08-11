@@ -1,0 +1,83 @@
+*{
+    font-family: "Nunito Sans";
+}
+section{
+    display: grid;
+    grid-template-columns: 22vw 20vw 22vw;
+}
+h3{
+    color: rgb(136, 136, 136);
+    font-weight: 600;
+    margin-bottom: -0.7vw;
+}
+p{
+    color: rgb(87, 87, 87);
+}
+.imagen-inferior{
+    margin-top: 10vw;
+    width: 18.5vw;
+}
+.explosion{
+    transform: rotate(-5deg);
+    width: 9vw;
+    position: absolute;
+    top: 9vw;
+    left: 2.5vw;
+}
+.estrella1{
+    width: 12vw;
+    position: absolute;
+    top: 8.5vw;
+    left: 11vw;
+}
+.fondo{
+    width: 32vw;
+    position: relative;
+    opacity: 80%;    
+    left: -6vw;
+}
+h1{
+    margin-top: 2vw;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+    font-size: 4vw;
+    text-align: center;
+}
+.doscolumna{
+    background-image: url('/img/pag/pag7/Gradient.png');
+    background-size:contain;
+}
+.doscolumna p{
+    text-align: center;
+    font-size: 1vw;
+}
+button{
+    margin-top: 1vw;
+    margin-left: 9vw;
+    font-size: 0.75vw;
+    width: 8vw;
+    height: 3vw;
+    background-color: #252525;
+    color: white;
+    border: 1px solid #252525;
+    border-radius: 1vw;
+}
+.imagen-superior{
+    width: 16.5vw;
+    margin-top: 2vw;
+}
+.dos{
+    margin-top: 7.8vw;
+}
+.estrella2{
+    position: absolute;
+    width: 8vw;
+    top: 21vw;
+    left: 44vw;
+}
+.sol{
+    position: absolute;
+    width: 6vw;
+    top: 26vw;
+    left: 53vw;
+}

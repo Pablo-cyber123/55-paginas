@@ -1,0 +1,63 @@
+*{
+    font-family: "Nunito Sans";
+}
+header{
+    width: 56vw;
+    background-color: #f2f2f2;
+    display: grid;
+    grid-template-columns: 22vw 20vw;
+}
+header div img{
+    margin-left: 6vw;
+    width: 26vw;
+}
+header div:nth-child(1){
+    margin-top: 1vw;
+    margin-left: 4vw;
+}
+header div h1{
+    font-size: 2.5vw;
+    text-align: left;
+    font-weight: 700;
+    margin-bottom: -0.15vw;
+}
+button{
+    font-size: 0.75vw;
+    width: 10vw;
+    height: 3vw;
+    background-color: #252525;
+    color: white;
+    border: 1px solid #252525;
+    border-radius: 2vw;
+}
+section{
+    display: grid;
+    grid-template-columns: 10vw 10vw 10vw 20vw;
+}
+section div{
+    margin-left: 3.6vw;
+    margin-top: -2.4vw;
+}
+section div img{
+
+    width: 7.5vw;
+}
+.div-final{
+    margin-top: -1.2vw;
+}
+h3{
+    font-weight: 500;
+}
+.rectangulo{
+    width: 2.3vw;
+    border: 1px solid;
+    margin-bottom: -1vw;
+}
+.div-final p{
+    margin-top: -1vw;
+    font-size: 0.8vw;
+    color: #252525;
+}
+.img-frutas{
+    width: 17vw;
+}

@@ -1,0 +1,75 @@
+*{
+    font-family: "Lato", sans-serif;
+}
+section{
+    display: grid;
+    grid-template-columns: 40vw 40vw;
+}
+.texto h1{    
+    font-size: 4vw;
+}
+.texto p{
+    margin-top: -1vw;
+    margin-right: 11vw;
+    margin-bottom: 2vw;
+    color: #333333;
+}
+button{
+    cursor: pointer;
+    font-size: 0.9vw;
+    width: 11vw;
+    height: 3vw;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    border-radius: 2vw;
+}
+.div-izquierda{
+    padding: 4vw;
+}
+.imgs-calorias img{
+    margin: 1vw;
+    margin-top: 3vw;
+    width: 8vw;
+}
+.div-titulos{
+    width: 30vw;
+    margin-top: 2vw;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 18vw 18vw;
+    border-radius: 2vw;
+}
+.div-titulos p{
+    margin-top: -1vw;
+    margin-left: 1vw;
+    margin-right: 6vw;
+    color: #333333;
+}
+.div-titulos h3{
+    margin-left: 0.8vw;
+}
+.div-derecha{
+    margin-top: 6.5vw;
+    display: grid;
+    grid-template-columns: 20vw 20vw;
+}
+.derecha-a img{
+    margin-bottom: 1.7vw;
+    width: 15vw;
+}
+.derecha-b img{
+    margin-left: -3vw;
+    margin-bottom: 1.7vw;
+    width: 15vw;
+}
+.derecha-b{
+    margin-top: 4vw;
+}
+.no-drag {
+  -webkit-user-drag: none;  /* Chrome, Safari */
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+   user-drag: none;
+}

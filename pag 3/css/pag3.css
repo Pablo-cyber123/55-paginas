@@ -1,0 +1,22 @@
+*{
+    font-family: "Nunito Sans";
+}
+section{
+    display: grid;
+    grid-template-columns: 15vw 15vw 15vw 15vw ;
+}
+.div-section div p:nth-child(1){
+    font-size: 1.5vw;
+    color: rgb(175, 175, 177);
+    font-weight: 700;
+}
+h1{
+    font-size: 3.2vw;
+}
+img{
+    margin-top: 1vw;
+    width: 12.6vw;
+}
+p{
+    margin: auto;
+}
